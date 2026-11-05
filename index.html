@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Spesial Untuk Teman</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Kontainer utama halaman -->
+    <div class="main-container">
+        
+        <!-- Judul Hagian Atas -->
+        <header class="page-header">
+            <h1>Untuk Teman Terbaikku ✨</h1>
+            <p>Geser kartu di bawah untuk membaca pesan-pesannya...</p>
+        </header>
+
+        <!-- Wadah Slider Utama -->
+        <div class="slider-container">
+            
+            <!-- Tombol Navigasi Kiri -->
+            <button class="nav-btn prev-btn" id="prevBtn" onclick="prevSlide()">&#10094;</button>
+
+            <!-- Daftar Kartu Pesan (Slider Wrapper) -->
+            <div class="slider-wrapper" id="sliderWrapper">
+                
+                <!-- KARTU 1 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-number">01</span>
+                        <span class="card-badge">Pesan Pertama</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- BAGIAN KOSONG: Ketik pesanmu di dalam tag <p> atau <div> ini -->
+                        <p class="editable-message">
+                            [ Ketik pesan atau kenangan pertama di sini... Halaman ini sengaja dibuat luas agar kamu bisa menulis dengan leluasa. ]
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Halaman 1 dari 4</span>
+                    </div>
+                </div>
+
+                <!-- KARTU 2 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-number">02</span>
+                        <span class="card-badge">Pesan Kedua</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- BAGIAN KOSONG -->
+                        <p class="editable-message">
+                            [ Tulis ucapan terima kasih atau cerita seru kalian di sini... ]
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Halaman 2 dari 4</span>
+                    </div>
+                </div>
+
+                <!-- KARTU 3 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-number">03</span>
+                        <span class="card-badge">Pesan Ketiga</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- BAGIAN KOSONG -->
+                        <p class="editable-message">
+                            [ Tulis harapan atau doa untuk temanmu di sini... ]
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Halaman 3 dari 4</span>
+                    </div>
+                </div>
+
+                <!-- KARTU 4 -->
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-number">04</span>
+                        <span class="card-badge">Pesan Penutup</span>
+                    </div>
+                    <div class="card-body">
+                        <!-- BAGIAN KOSONG -->
+                        <p class="editable-message">
+                            [ Tulis penutup atau kalimat manis terakhir di sini... ]
+                        </p>
+                    </div>
+                    <div class="card-footer">
+                        <span>Halaman 4 dari 4</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tombol Navigasi Kanan -->
+            <button class="nav-btn next-btn" id="nextBtn" onclick="nextSlide()">&#10095;</button>
+
+        </div>
+
+        <!-- Indikator Titik (Dots) untuk Slider -->
+        <div class="dots-container" id="dotsContainer">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+    </div>
+
+    <!-- Menghubungkan file JavaScript eksternal -->
+    <script src="script.js"></script>
+</body>
+</html>
